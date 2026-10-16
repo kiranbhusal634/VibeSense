@@ -96,19 +96,9 @@ This is a **measurement-range selection error**, not simply an error in numerica
 
 The original submission contains the ESP32 and Python source in its appendices. For an easily reproducible repository, extract the **actual tested source files** from the original development environment rather than copying formatted snippets from Word/PDF. The published programs should be checked for compilation, hardware pin mapping and dependencies.
 
-Suggested repository structure (adapt to the files you actually have):
+Suggested repository structure :
 
-```text
-.
-├── README.md
-├── firmware/                 # Tested ESP32 / Arduino source
-├── acquisition/              # Python serial CSV logger
-├── analysis/                 # Calibration, FFT/PSD and feature scripts
-├── data/                     # Raw records, with labels and caveats
-├── figures/                  # Setup photos and selected outputs
-├── reports/                  # Original minor-project report / analysis PDFs
-└── requirements.txt          # Verified Python dependencies
-```
+
 
 The reported Python toolchain uses **NumPy, pandas, SciPy, Matplotlib**, and **ReportLab**, with the ESP32 developed in an Arduino-compatible environment. Exact package versions, board core and serial settings should be added once tested on a clean machine. **No one-command installation or reproduction procedure is claimed here until it has actually been verified.**
 
@@ -143,4 +133,4 @@ Department of Mechanical and Automobile Engineering, IOE Paschimanchal Campus, T
 
 ## Acknowledgment and reuse
 
-This is an educational prototype and research-learning artifact. Please do not use its historical recordings or preliminary condition labels as a validated industrial fault-diagnosis benchmark. Add a license only after the team agrees on how to release the jointly developed code and documentation.
+This is an educational prototype and research-learning artifact. Please do not use its historical recordings or preliminary condition labels as a validated industrial fault-diagnosis benchmark. 
